@@ -15,11 +15,12 @@ namespace NFTAppV9
             InitializeComponent();
         }
 
-        //private async void TrackButton_Clicked(object sender, EventArgs e)
-        //{
-        //    //await Navigation.PushAsync(new TouchTrackerPage());
-        //    await Navigation.PushAsync(new NavigationPage(new HomePage()));
-        //}
+        private async void TrackButton_Clicked(object sender, EventArgs e)
+        {
+            //await Navigation.PushAsync(new TouchTrackerPage());
+            await Navigation.PushAsync(new NavigationPage(new HomePage()));
+            await.Navigation.PushAsync(new NavigationPage(Android.Resource.Layout.activity_main.xml));
+        }
 
         async void OnNextPageButtonClicked(object sender, EventArgs e)
         {

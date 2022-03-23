@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Android.Views;
+using Android.Widget;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,9 +30,18 @@ namespace NFTAppV9
             //Testing this
             await Navigation.PushAsync(new TestingCoverage("Forehead"));
 
+            //await Navigation.PushAsync(new NavigationPage(new HomePage()));
+            //await Navigation.PushAsync(new NavigationPage(new );
             //GestureRecognizer gr = new GestureRecognizer();
 
 
+
+            //SetContentView(Resource.Layout.activity_main);
+
+            //txtGestureView = FindViewById<TextView>(Resource.Id.imageView);
+            //SetContentView(Android.Resource.Layout.activity_main);
+
+            //txtGestureView.SetOnTouchListener(this);
         }
 
         async void OnNextPageButtonClickedShare(object sender, EventArgs e)

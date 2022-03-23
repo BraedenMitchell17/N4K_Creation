@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Android;
+using Android.Widget;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,6 +8,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static Android.Views.View;
 
 namespace NFTAppV9
 {
@@ -48,6 +51,8 @@ namespace NFTAppV9
 
             //    return true;
             //});
+
+            //SetContentView = FindByViewId<textView>(Resource.Id.imageView);
         }
 
         //private void KissTest_Pressed(object sender, EventArgs e)
