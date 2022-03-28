@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -22,7 +22,6 @@ namespace NFTAppV9
     public partial class TestingCoverage : ContentPage
     {
         private TextView txtGestureView;
-
 
 
         //SetContentView(Resource.Layout.activity_main);
@@ -52,6 +51,12 @@ namespace NFTAppV9
         public TestingCoverage(string location)
         {
             InitializeComponent();
+
+
+
+
+            //txtGestureView.SetOnTouchListener(this);
+            
 
             //pointerCoords = new MotionEvent();
             //pointerCoords.GetAxisValue(Axis.RelativeX);

@@ -22,6 +22,8 @@ namespace NFTAppV9.Droid
         private static int SWIPE_MAX_OFF_PATH = 250;
         private static int SWIPE_THRESHOLD_VELOCITY = 200;
 
+        public static MainActivity Instance; // mwh
+
         private int imageIndex = 0;
 
         //In here is giving me the issue of getting my page to display correctly 
@@ -31,6 +33,7 @@ namespace NFTAppV9.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            Instance = this;
             LoadApplication(new App());
 
             //SetContentView(Resource.Layout.activity_main);
