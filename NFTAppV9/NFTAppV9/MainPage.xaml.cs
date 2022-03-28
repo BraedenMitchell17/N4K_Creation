@@ -19,7 +19,7 @@ namespace NFTAppV9
         {
             //await Navigation.PushAsync(new TouchTrackerPage());
             await Navigation.PushAsync(new NavigationPage(new HomePage()));
-            await.Navigation.PushAsync(new NavigationPage(Android.Resource.Layout.activity_main.xml));
+            //await Navigation.PushAsync(new NavigationPage(Android.Resource.Layout.activity_main.xml));
         }
 
         async void OnNextPageButtonClicked(object sender, EventArgs e)

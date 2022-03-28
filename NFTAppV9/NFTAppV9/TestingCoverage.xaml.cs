@@ -8,13 +8,33 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+
+
+using Android.Views;
+using Android.Widget;
+// using static Android.Views.GestureDetector; // MWH - don't need to gesture recognizer
 using static Android.Views.View;
+using Android.OS;
 
 namespace NFTAppV9
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class TestingCoverage : ContentPage
     {
+        private TextView txtGestureView;
+
+
+
+        //SetContentView(Resource.Layout.activity_main);
+
+        //txtGestureView = FindViewById<TextView>(Resource.Id.imageView);
+
+        //gestureDetector = new GestureDetector(this); // MWH - don't need to gesture recognizer
+
+        //txtGestureView.SetOnTouchListener(this);
+
+
+
         //public Command TouchCommand { get; }
         //Timer timer = new Timer();
         //Timer masterTimer = new Timer();
@@ -54,6 +74,30 @@ namespace NFTAppV9
 
             //SetContentView = FindByViewId<textView>(Resource.Id.imageView);
         }
+
+
+
+
+        protected void OnCreate(Bundle savedInstanceState)
+        {
+            //base.OnCreate(savedInstanceState);
+
+            //Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+            //global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+            //LoadApplication(new App());
+
+            //SetContentView(Resource.Layout.activity_main);
+
+            //txtGestureView = FindViewById<TextView>(Resource.Id.imageView);
+
+            //gestureDetector = new GestureDetector(this); // MWH - don't need to gesture recognizer
+
+            //txtGestureView.SetOnTouchListener(this);
+        }
+
+
+
+
 
         //private void KissTest_Pressed(object sender, EventArgs e)
         //{

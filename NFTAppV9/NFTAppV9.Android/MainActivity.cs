@@ -24,6 +24,7 @@ namespace NFTAppV9.Droid
 
         private int imageIndex = 0;
 
+        //In here is giving me the issue of getting my page to display correctly 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -32,13 +33,13 @@ namespace NFTAppV9.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
 
-            SetContentView(Resource.Layout.activity_main);
+            //SetContentView(Resource.Layout.activity_main);
 
-            txtGestureView = FindViewById<TextView>(Resource.Id.imageView);
+            //txtGestureView = FindViewById<TextView>(Resource.Id.imageView);
 
             //gestureDetector = new GestureDetector(this); // MWH - don't need to gesture recognizer
 
-            txtGestureView.SetOnTouchListener(this);
+            //txtGestureView.SetOnTouchListener(this);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
