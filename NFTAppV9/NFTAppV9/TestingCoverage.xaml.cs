@@ -23,7 +23,6 @@ namespace NFTAppV9
     {
         private TextView txtGestureView;
 
-
         //SetContentView(Resource.Layout.activity_main);
 
         //txtGestureView = FindViewById<TextView>(Resource.Id.imageView);
