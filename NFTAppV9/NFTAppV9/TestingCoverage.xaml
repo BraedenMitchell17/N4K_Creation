@@ -1,27 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="NFTAppV9.TestingCoverage">
+             x:Class="NFTAppV9.TestingCoverage"
+             xmlns:pe="clr-namespace:TouchTrackingPlatformEffects">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Black">
+        <Frame BackgroundColor="#FFFFFF" Padding="24" CornerRadius="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
 
+                <Label Text="TouchTrackerPage: Click button when done..." FontSize="Title" TextColor="White" Padding="30,10,30,10" Grid.Row="0"/>
 
+                <Button Text="Finish?" BackgroundColor="#3D9DD5" Clicked="DoneButton_Clicked" Grid.Row="7"/>
 
-
-
-
-            <!--<Label Text="Test"               
-                   HorizontalOptions="Center"
-                   FontSize="40"
-                   TextColor="White"/>
-
-            <Button x:Name="KissTest"
-                    HorizontalOptions="Center"
-                    WidthRequest="350"
-                    HeightRequest="270"
-                    Pressed="KissTest_Pressed"
-                    Released="KissTest_Released" ></Button>-->
-
-        </StackLayout>
+                <Grid.Effects>
+                    <pe:TouchTrackingEffect />
+                </Grid.Effects>
+            </Grid>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>

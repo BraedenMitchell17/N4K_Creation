@@ -26,22 +26,7 @@ namespace NFTAppV9
 
         async void OnNextPageButtonClickedKiss(object sender, EventArgs e)
         {
-            //await Navigation.PushAsync(new KissPage("Forehead"));
-            //Testing this
-            await Navigation.PushAsync(new TestingCoverage("Forehead"));
-
-            //await Navigation.PushAsync(new NavigationPage(new HomePage()));
-            //await Navigation.PushAsync(new NavigationPage(new );
-            //GestureRecognizer gr = new GestureRecognizer();
-
-
-
-            //SetContentView(Resource.Layout.activity_main);
-
-            //txtGestureView = FindViewById<TextView>(Resource.Id.imageView);
-            //SetContentView(Android.Resource.Layout.activity_main);
-
-            //txtGestureView.SetOnTouchListener(this);
+            await Navigation.PushAsync(new KissPage("Forehead"));
         }
 
         async void OnNextPageButtonClickedShare(object sender, EventArgs e)

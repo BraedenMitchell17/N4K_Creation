@@ -18,7 +18,7 @@ namespace NFTAppV9
         {
             //await Navigation.PushAsync(new DonePage());
             //await Navigation.PopAsync();
-            await Navigation.PushAsync(new NavigationPage(new HomePage()));
+            await Navigation.PushAsync(new HomePage());
             
         }
     }

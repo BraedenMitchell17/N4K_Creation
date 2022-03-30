@@ -14,8 +14,6 @@ namespace NFTAppV9
     {
         Timer timer = new Timer();
         string typeOfKiss;
-        int counter;
-        bool pressed;
 
         public KissPage(string type)
         {
@@ -23,38 +21,11 @@ namespace NFTAppV9
             typeOfKiss = type;
         }
 
-        async void OnNextPageButtonClickedShare1(object sender, EventArgs e)
+        private async void DoneButton_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ShareKissPage(counter.ToString(), typeOfKiss));
+                                                                    //Initally for the duration now?
+            await Navigation.PushAsync(new ShareKissPage("temp", typeOfKiss));
         }
 
-        private void KissTest_Pressed(object sender, EventArgs e)
-        {
-            KissTest.BackgroundColor = Color.Red;
-            pressed = true;
-            Device.StartTimer(TimeSpan.FromMilliseconds(1), () =>
-            {
-                if (pressed == true)
-                {
-                    counter++;
-                    //lblDuration.Text = counter.ToString();
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            });
-        }
-
-        private void KissTest_Released(object sender, EventArgs e)
-        {
-            pressed = false;
-        }
-
-        async void OnBackButtonPressed(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new TypeOfKissPage());
-        }
     }
 }
