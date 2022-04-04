@@ -5,7 +5,6 @@ using Android.Content.PM;
 using Android.Runtime;
 using Android.OS;
 
-
 namespace NFTAppV9.Droid
 {
     [Activity(Label = "NFTAppV9", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]

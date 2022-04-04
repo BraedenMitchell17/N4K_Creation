@@ -17,8 +17,8 @@ namespace NFTAppV9
         private async void DoneButton_Clicked(object sender, EventArgs e)
         {
             //await Navigation.PushAsync(new DonePage());
-            //await Navigation.PopAsync();
-            await Navigation.PushAsync(new HomePage());
+            await Navigation.PopAsync();
+            //await Navigation.PushAsync(new HomePage());
             
         }
     }

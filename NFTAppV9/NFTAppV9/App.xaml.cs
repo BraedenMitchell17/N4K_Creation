@@ -9,11 +9,7 @@ namespace NFTAppV9
         public App()
         {
             InitializeComponent();
-
-            //MainPage = new MainPage();
             MainPage = new NavigationPage(new MainPage());
-            //HomePage homePage = new NavigationPage(new HomePage());
-            //TypeOfKissPage TypePage = new TypeOfKissPage();
         }
 
         protected override void OnStart()
