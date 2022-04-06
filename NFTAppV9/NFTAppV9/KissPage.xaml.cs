@@ -23,7 +23,7 @@ namespace NFTAppV9
 
         private async void DoneButton_Clicked(object sender, EventArgs e)
         {
-                                                                    //Initally for the duration now?
+                                                        //Initally for the duration now?
             await Navigation.PushAsync(new ShareKissPage("temp", typeOfKiss));
         }
 

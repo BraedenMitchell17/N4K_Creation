@@ -15,6 +15,7 @@ namespace NFTAppV9
             InitializeComponent();
         }
 
+        //Not in use
         private async void TrackButton_Clicked(object sender, EventArgs e)
         {
             //await Navigation.PushAsync(new TouchTrackerPage());
@@ -36,7 +37,5 @@ namespace NFTAppV9
         {
             await Navigation.PushAsync(new MarketplacePage());
         }
-
-
     }
 }

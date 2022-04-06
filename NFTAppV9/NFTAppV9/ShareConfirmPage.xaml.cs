@@ -26,7 +26,6 @@ namespace NFTAppV9
         async void OnOutlookClicked(object sender, EventArgs e)
         {
             Device.OpenUri(new Uri(String.Format("mailto:{0}", "")));
-            //I want to attach have a way to attach the data somewhere here
             //SendEmail();
         }
 

@@ -208,5 +208,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\Layout\content_main.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\n4klogo.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

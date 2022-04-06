@@ -5,20 +5,6 @@
              xmlns:pages="clr-namespace:NFTAppV9"
              x:Class="NFTAppV9.MainPage">
 
-    <!--<Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-
-            <Label Text="MainPage: Click button to start tracking..." FontSize="Title" TextColor="White" Padding="30,10,30,10" Grid.Row="0"/>
-
-            <Button Text="Click to track..." Clicked="TrackButton_Clicked" Grid.Row="1"/>
-        </Grid>
-    </Frame>-->
-
     <StackLayout BackgroundColor="White">
         <Label Text="Nickel For A Kiss"
                    HorizontalOptions="Center"

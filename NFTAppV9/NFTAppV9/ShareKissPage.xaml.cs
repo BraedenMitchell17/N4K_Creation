@@ -10,15 +10,10 @@ using Xamarin.Forms.Xaml;
 
 namespace NFTAppV9
 {
-    //touch effect
-    //Platfrom effect class
-    //Onattached ondetached
-
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ShareKissPage : ContentPage
     {
-        string typeOfKiss;                                                                              //Try it just as a text file first
-        string filename = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "kiss.txt");
+        string typeOfKiss;                                                                              
         public ShareKissPage(string duration, string type)
         {
             InitializeComponent();
@@ -29,12 +24,6 @@ namespace NFTAppV9
 
         async void OnNextPageButtonClickedConfirm(object sender, EventArgs e)
         {
-            if (!File.Exists(filename))
-            {
-                File.WriteAllText(filename, typeOfKiss + lblDuration.Text);
-            }
-
-
             await Navigation.PushAsync(new ShareConfirmPage());
         }
 

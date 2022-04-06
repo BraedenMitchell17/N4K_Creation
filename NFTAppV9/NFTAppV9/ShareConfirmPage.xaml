@@ -4,11 +4,6 @@
              x:Class="NFTAppV9.ShareConfirmPage">
     <ContentPage.Content>
         <Grid RowDefinitions="auto" ColumnDefinitions="2" BackgroundColor="White">
-            <!--<Label Text="Share My Kiss"               
-                   HorizontalOptions="Center"
-                   FontSize="40"
-                   TextColor="White"
-                   Grid.Row="1" Grid.ColumnSpan="3"/>-->
             <ImageButton Source="marketplace.png"
                          Grid.Row="1"
                          Grid.Column="1"

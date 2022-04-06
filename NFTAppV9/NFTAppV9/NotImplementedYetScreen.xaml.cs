@@ -19,9 +19,7 @@ namespace NFTAppV9
 
         async void OnNextPageButtonClicked(object sender, EventArgs e)
         {
-            //Just set to home page for now will change it
-            //Set it to just to to the previous screen
-            await Navigation.PushAsync(new HomePage());
+            await Navigation.PopAsync();
         }
     }
 }
